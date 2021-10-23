@@ -11,6 +11,7 @@ typedef int Myfunc(const char *, const struct stat *, int);
 static int dopath(Myfunc *);
 static int myftw(char *, Myfunc *);
 static Myfunc myfunc, myfunc1, myfunc2;
+static void getfilename(const char* pathname, char* filename);
 static void getRealpath(const char *pathname, char *realpath, size_t len);
 
 static long n4096, nreg, ndir, nblk, nchr, nfifo, nslink, nsock, ntot;
