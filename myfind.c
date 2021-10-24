@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
         ntot = nreg + ndir + nblk + nchr + nfifo + nslink + nsock;
         if (!ntot) ntot = 1;
 
-        printf(" ------------------------------------------\n");
+        printf("\n ------------------------------------------\n");
         printf("|      TYPES       |  NUMNERS  |  PERCENT  |\n");
         printf(" ------------------------------------------\n");
         printf("|  REGULAR FILES   |  %-7ld  |  %-5.2f %%  |\n", nreg, nreg * 100.0 / ntot);
