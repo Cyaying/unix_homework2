@@ -20,8 +20,8 @@ echo -e "----------------------------"
 echo -e "\n$ TEST FOR QUESTION-1: ./myfind /"
 ./myfind /
 
-echo -e "\n$ TEST FOR QUESTION-2: ./myfind /home -comp apue.h"
-./myfind /home -comp apue.h
+echo -e "\n$ TEST FOR QUESTION-2: ./myfind / -comp apue.h"
+./myfind / -comp apue.h
 
-echo -e "\n$ TEST FOR QUESTION-3: ./myfind / -name tmp systemd"
-./myfind / -name tmp systemd
+echo -e "\n$ TEST FOR QUESTION-3: ./myfind / -name apue.h error.o"
+./myfind / -name apue.h error.o
