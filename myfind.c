@@ -345,7 +345,7 @@ static int myfunc1(const char *pathname, const struct stat *statptr, int type)
 
 static int myfunc2(const char *pathname, const struct stat *statptr, int type)
 {
-    char filename[64] = {0};
+    char filename[256] = {0};
     char realpath[1024] = {0};
 
     /* check file type */

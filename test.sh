@@ -2,7 +2,7 @@
 
 echo -e "----------------------------"
 echo "-> start compiling ..."
-gcc -c myfind.c -o myfind.o
+gcc -c myfind.c -std=c99
 if [ $? -eq 0 ]
 then
     echo "-> compile successfully !"
@@ -17,11 +17,11 @@ fi
 echo -e "----------------------------"
 
 
-echo -e "\n$ TEST FOR QUESTION-1: ./myfind /usr"
-./myfind /usr
+echo -e "\n$ TEST FOR QUESTION-1: ./myfind /"
+./myfind /
 
 echo -e "\n$ TEST FOR QUESTION-2: ./myfind /home -comp apue.h"
 ./myfind /home -comp apue.h
 
-echo -e "\n$ TEST FOR QUESTION-3: ./myfind /home -name apue.h myfind.c"
-./myfind /home -name apue.h myfind.c
+echo -e "\n$ TEST FOR QUESTION-3: ./myfind / -name tmp systemd"
+./myfind / -name tmp systemd
