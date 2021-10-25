@@ -109,7 +109,6 @@ int main(int argc, char *argv[])
 
         close(fd);
 
-        puts("");
         myftw(argv[1], myfunc1);
     }
 
@@ -120,7 +119,6 @@ int main(int argc, char *argv[])
         arglen = argc - 3;
         argvs = &argv[3];
 
-        puts("");
         myftw(argv[1], myfunc2);
     }
 
